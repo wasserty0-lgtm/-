@@ -1,0 +1,6 @@
+{
+  "name": "Voice Pitch Transformer",
+  "description": "An interactive audio application that shifts the pitch of your voice to female or male timbres while preserving original speech style, timing, and intonations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

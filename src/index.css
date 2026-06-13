@@ -1,0 +1,26 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom glow animations for our high-end studio theme */
+@keyframes neon-pulse {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(99, 102, 241, 0.4), 0 0 12px rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(99, 102, 241, 0.6), 0 0 20px rgba(99, 102, 241, 0.4);
+  }
+}
+
+.text-glow-indigo {
+  animation: neon-pulse 3s infinite;
+}
